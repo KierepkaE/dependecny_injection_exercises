@@ -1,1 +1,1 @@
-# dependecny injection exercises
+# dependency injection exercises
