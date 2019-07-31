@@ -1,12 +1,8 @@
-class Greeter
-  def greet
-    smiley = Smiley.new
-    "Hello #{smiley.get}"
-  end
-end
+require 'greeter'
 
-class Smiley
-  def get
-    ":-)"
+describe Smiley do
+  it 'returns a smiley' do
+    smiley = Smiley.new
+    expect(smiley.get).to eq ':-)'
   end
 end
