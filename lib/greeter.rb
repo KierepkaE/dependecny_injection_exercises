@@ -1,7 +1,11 @@
 class Greeter
+
+  def initialize(smiley = Smiley.new)
+    @smiley = smiley
+  end
+
   def greet
-    smiley = Smiley.new
-    "Hello #{smiley.get}"
+    "Hello #{@smiley.get}"
   end
 end
 
